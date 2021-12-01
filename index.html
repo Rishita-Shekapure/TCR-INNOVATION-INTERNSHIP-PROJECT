@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <title>CharitAble</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1>CharitAble</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">About Us</a></li>
+            <li><a href="#projects" data-after="Projects">Our Work</a></li>
+            <li><a href="#donate" data-after="Donate">Donate</a></li>
+            <li><a href="#insight" data-after="insight">Insight</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>CharitAble <span></span></h1>
+        <h1>Where Life<span></span></h1>
+        <h1>Meets Humanity <span></span></h1>
+        <a href="#donate" type="button" class="cta">Donate Please!</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- About Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">About Us</h1>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+
+          <h2>Who We Are?</h2>
+          <p>We are just another beings who are trying to help people by collecting donations from around the world!
+            So just please help us improve the lives of millions of people out thier just by a generous amount of
+            donation.
+          </p>
+        </div>
+        <div class="service-item">
+
+          <h2>What We do?</h2>
+          <p>Being many people want to donate but don't understand where will they have safe donations .Here we come to
+            your rescue by helping you donate and also not lose the credibility.
+          </p>
+        </div>
+        <div class="service-item">
+
+          <h2>How We Serve</h2>
+          <p>We create awareness among people with the help of this website and then collect donations.
+            After raising required amount of donations for certain events we submit the amount
+            to the homage centres.
+          </p>
+        </div>
+        <div class="service-item">
+
+          <h2>Where are we located?</h2>
+          <p>Our Physical center is located in Mumbai.
+            The details of which are provided in the contact us section.You can pay us a visit there to check
+            after donation if the center is creadible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+  <!-- work -->
+  <section class="text-gray-600 body-font" id="projects">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="service-top">
+        <h1 class="section-title">Our Work</h1>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="don1.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="don6.png">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="don3.png">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="don2.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="don4.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="don5.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- work end -->
+
+  <!-- Donate Section -->
+  <section id="donate">
+    <div class="donate container">
+      <div id='login-form' class='login-page'>
+        <div class="form-box">
+          <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+          </div>
+          <form id='login' class='input-group-login'>
+            <input type='text' class='input-field' placeholder='Email Id' required>
+            <input type='password' class='input-field' placeholder='Enter Password' required>
+            <input type='checkbox' class='check-box'><span>Remember Password</span>
+            <button type='submit' class='submit-btn'>Log in</button>
+          </form>
+          <form id='register' class='input-group-register'>
+            <input type='text' class='input-field' placeholder='Name' required>
+            <input type='text' class='input-field' placeholder='Email Id ' required>
+            <input type='email' class='input-field' placeholder='Enter Password' required>
+            <input type='password' class='input-field' placeholder='Confirm Password' required>
+            <input type='password' class='input-field' placeholder='Amount Donating' required>
+            <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+            <button type='submit' class='submit-btn'>Donate</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      var x = document.getElementById('login');
+      var y = document.getElementById('register');
+      var z = document.getElementById('btn');
+      function register() {
+        x.style.left = '-400px';
+        y.style.left = '50px';
+        z.style.left = '110px';
+      }
+      function login() {
+        x.style.left = '50px';
+        y.style.left = '450px';
+        z.style.left = '0px';
+      }
+    </script>
+    <script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </section>
+  <!-- Donate Section -->
+
+  <!-- insight Section -->
+  <section id="insight">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E1xkXZs0cAQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Be the one to make a change!</span></h1>
+        <h2>Charity- the ultimate step for humanity.</h2>
+        <p>“For attractive lips, speak words of kindness.
+          For lovely eyes, seek out the good in people.
+          For a slim figure, share your food with the hungry.
+          For beautiful hair, let a child run his fingers through it once a day.
+          For poise, walk with the knowledge you’ll never walk alone.</p>
+        <a href="#donate" class="cta">Start your journey</a>
+      </div>
+    </div>
+  </section>
+  <!-- End insight Section -->
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>CHARITABLE</h1>
+      </div>
+      <h2>THE ULTIMATE CHARITY DESTINATION</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/rishita-shekapure-2112551b7/"><img
+              src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Rishita Shekapure. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
